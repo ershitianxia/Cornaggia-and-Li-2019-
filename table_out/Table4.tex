@@ -1,0 +1,56 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+                    &\multicolumn{1}{c}{Acq_Vol_A-B}&\multicolumn{1}{c}{Acq_Count_A-B}\\
+\midrule
+open_B-A            &   -0.000493\sym{**} &   -0.000107         \\
+                    &  (0.000203)         &  (0.000550)         \\
+\addlinespace
+Within-state acquisition growth B& -0.00000468         &  0.00000887         \\
+                    & (0.0000213)         & (0.0000296)         \\
+\addlinespace
+Within-state acquisition growth A&   0.0000405         &   -0.000226\sym{***}\\
+                    & (0.0000510)         & (0.0000578)         \\
+\addlinespace
+tobinq_B-A          &  0.00000246         &   -0.000212         \\
+                    & (0.0000892)         &  (0.000227)         \\
+\addlinespace
+stock_return_B-A    &   -0.000459         &    0.000624         \\
+                    &  (0.000404)         &   (0.00107)         \\
+\addlinespace
+GDP_growth_B-A      &     0.00574         &     0.00552         \\
+                    &   (0.00369)         &   (0.00392)         \\
+\addlinespace
+GDP_per_capita_B-A  &     -0.0448         &       0.152\sym{*}  \\
+                    &    (0.0541)         &    (0.0855)         \\
+\addlinespace
+unemployment_B-A    &  -0.0000540         &  -0.0000216         \\
+                    & (0.0000792)         &  (0.000142)         \\
+\addlinespace
+Corporate_income_tax_B-A&           0         &           0         \\
+                    &         (.)         &         (.)         \\
+\addlinespace
+anti_competition_B-A&   -0.000885\sym{**} &  -0.0000997         \\
+                    &  (0.000420)         &  (0.000717)         \\
+\addlinespace
+Industry_dissimilarity_B-A&     -0.0133\sym{***}&    -0.00216         \\
+                    &   (0.00416)         &   (0.00602)         \\
+\addlinespace
+Economic_correlation_AB&           0         &           0         \\
+                    &         (.)         &         (.)         \\
+\addlinespace
+Constant            &     0.00632\sym{***}&      0.0137\sym{***}\\
+                    &   (0.00180)         &   (0.00256)         \\
+\addlinespace
+State-pair FE       &  \checkmark         &  \checkmark         \\
+\addlinespace
+Year FE             &  \checkmark         &  \checkmark         \\
+\midrule
+N                   &       29346         &       40476         \\
+r2_a                &    -0.00198         &       0.165         \\
+vce                 &     Acquirer State         &     Acquirer State         \\
+\bottomrule
+\end{tabular}
+}
